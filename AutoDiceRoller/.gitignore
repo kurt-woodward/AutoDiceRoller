@@ -5,6 +5,8 @@
 
 # Configuration files
 *.json
+*.csproj
+*.sln
 
 .vscode/*
 !.vscode/settings.json
