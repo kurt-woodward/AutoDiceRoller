@@ -3,6 +3,12 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
+# Configuration files
+*.json
+
+# Local History for Visual Studio Code
+.history/
+
 # User-specific files
 *.rsuser
 *.suo
