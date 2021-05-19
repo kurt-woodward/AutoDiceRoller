@@ -23,6 +23,7 @@ The backend was developed using C#, T-SQL, and Python, with Postman for API deve
 ####  OcrResult.cs  
 > This model underlies a scaffolded form where entries can be made and modified manually. Eventually, I would like to make this accessible only via API or a future admin login. 
 ### [Database](#2-database)  
+#### [Database Integration](https://github.com/kurt-woodward/AutoDiceRoller/edit/main/Diagrams/README.md#database-integration)
 ![Initial Entity Relationship Diagram](https://raw.githubusercontent.com/kurt-woodward/AutoDiceRoller/main/Diagrams/AutoDiceRoller_ERD.jpg)
 #### Initial Entity Relationship Diagram. The app currently only implements some of these features.
 ![Current SSMS Database Diagram](https://raw.githubusercontent.com/kurt-woodward/AutoDiceRoller/main/Diagrams/Database_Diagram.JPG)
