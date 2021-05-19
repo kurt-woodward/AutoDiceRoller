@@ -8,7 +8,7 @@
 ![Initial Entity Relationship Diagram](https://raw.githubusercontent.com/kurt-woodward/AutoDiceRoller/main/Diagrams/AutoDiceRoller_ERD.jpg)  
 #### Initial Entity Relationship Diagram  
 
-### [Database Integration](#database-integration) / CRUD Operations from Web App and API  
+### Database Integration / CRUD Operations from Web App and API  
 ###### [Back to Main README.md](https://github.com/kurt-woodward/AutoDiceRoller#database)  
 ![App - Initial State](https://raw.githubusercontent.com/kurt-woodward/AutoDiceRoller/main/Diagrams/App%20-%20Initial%20State.JPG)  
 #### App - Initial State  
