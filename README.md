@@ -42,10 +42,9 @@ The backend was developed using C#, T-SQL, and Python, with Postman for API deve
 > Screenshots  
 ![Placeholder](https://placeholder)  
 ### [API](#5-api)  
-![Placeholder](https://placeholder) Postman screenshot  
-![Placeholder](https://placeholder) Sending from RaspberryPi  
+![Postman - Response 201 and All Updated](https://raw.githubusercontent.com/kurt-woodward/AutoDiceRoller/main/Diagrams/Postman%20-%20Response%20201%20and%20all%20updated.JPG)  
+>Postman - Response 201 and All Updated
 ### [Software Testing](#6-software-testing)  
-
 #### Requirements Table  
 ##### TODO  
 #### Test Chart  
