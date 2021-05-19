@@ -47,14 +47,42 @@ The backend was developed using C#, T-SQL, and Python, with Postman for API deve
 ### [Software Testing](#6-software-testing)  
 
 #### Requirements Table  
-
+##### TODO  
 #### Test Chart  
+##### TODO  
 
 ### [Hardware Setup and Configuration](#7-hardware-setup-and-configuration)  
 [Hardware Setup README](https://github.com/kurt-woodward/AutoDiceRoller/blob/main/Device%20Build/README.md)  
 #### Installing Ubuntu Server 20.04
-> This was surprisingly simple. Canonical has an application that allows you to select from a number of Rasperry Pi OS or Ubuntu images appropriate for various RaspberryPi models and purposes, and automatically formats and writes to your chosen installation media. 
+> This was surprisingly simple. Canonical has an [application](https://ubuntu.com/tutorials/how-to-install-ubuntu-on-your-raspberry-pi#1-overview) that allows you to select from a number of Rasperry Pi OS or Ubuntu images appropriate for various RaspberryPi models and purposes, and automatically formats and writes to your chosen installation media. Network access for downloading updates, packages, and libraries can be configured by editing a (OS-specific) .txt file on the installation media.
 #### Installing required Python libraries
-### [Challenges, Lessons Learned, Lucky Moments](#8-challenges-lessons-learned-lucky-moments)
-### [Special Thanks & Inspiration](#9-special-thanks-and-inspiration)
+> This was something of a headache. I learned that best practice when starting a new Python project is to set up a 'virtual environment', so that dependencies from one project don't conflict with those from another. I believe this is similar in purpose to Visual Studio's 'solutions'. Then I followed installation tutorials for each library. Some were simple using Pip or Apt Install commands, but SciKit Image and OpenCV had to be compiled from source. Apparently, it has something to do with the Pi CPU's architecture (ARM).
+> Libraries used include: 
+> -OpenCV (optical character recognition)
+> -NumPy
+> -SciKit
+> -PyTorch
+> -RPi.GPIO (Control servo motor via RPi's General Purpose Input-Output pins)
+### [Challenges, Lessons Learned, Lucky Moments](#8-challenges-lessons-learned-lucky-moments)  
+> Challenges:  
+  
+> --Getting an MVC app up and running outside of the textbook assignments. I still have to figure out how to dress it all up without it getting hopelessly complicated.  
+> --Quirky Linux/RPi/Python/Library interactions. I originally wanted to use the RPi camera module since it doesn't have to compete with USB devices for bandwidth, but it's nearly impossible to do on Ubuntu. Conversely, installing/compiling the required libraries on Raspberry Pi OS would have even more time and labor intensive than it was.  
+> --Documenting my process and efforts has been a struggle. I know it's worth it and makes for better software, so I will continue to work on this area.  
 
+> -Lessons Learned:  
+> --Start smaller when learning a new skill. This was my second project for this course. The first one, codenamed [ViridianKrypton](), was too broad in scope to implement effectively (and securely) at my current skill level.  
+> --Time management while working from home. It took many weeks to discover (what my wife is all-too familiar with) that the only way I would get uninterrupted study time was to shift my sleep schedule as much as possible to daylight hours, and work late into the night.  
+  
+> -Lucky Moments:  
+> --Listening to a podcast on a long drive, I heard an interview with author Adrian Rosebrock, PhD. In the interview Dr. Rosebrock described the tools needed to accomplish the computer vision piece. Additionally, he hosts a number of excellent tutorials on the [PyImageSearch website](https://www.pyimagesearch.com/) which I relied on heavily while configuring the Python virtual environment and compiling OpenCV.  
+> --Learning to follow & debug C# applications translated surprisingly well to tinkering with parametric CAD files in [OpenSCAD](https://openscad.org/index.html). This allowed me to add windows to an n-sided box model from [Thingiverse](https://www.thingiverse.com/thing:27716) and 3d print it without much fuss.  
+> -- My wife thought of mounting the dice box and camera on a ring stand, which saved me the time of designing and building a mount out of plywood. She wanted one anyway, so it was win-win.  
+### [Special Thanks & Inspiration](#9-special-thanks-and-inspiration)  
+> My gratitude goes out to:  
+> -My family for putting up with me during these past 19 weeks in MSSA.  
+> -Our instructor, Dan S., for his time and patience.  
+> -My many classmates for their empathy & encouragement while still keeping things real.  
+> -In particular, Melanie M. and Johnathan S. for general life and career advice, and Brenden W. and Jonathan R. for helping me through my mental block on MVC apps.  
+  
+> This project was inspired by a dice rolling machine seen in this [YouTube video](https://youtu.be/UxT8COXu6zE?t=429) by DM Rybonator. He was reviewing a set of Bluetooth-enabled dice [(see Kickstarter)](https://www.kickstarter.com/projects/pixels-dice/pixels-the-electronic-dice) that could report the results of rolls through a mobile phone speaker for vision-impaired players, or through platforms like Discord to enhance geographically-dispersed Table-Top RPGs.  
